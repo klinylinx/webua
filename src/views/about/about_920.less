@@ -13,7 +13,28 @@
     flex-shrink: 0;
     margin-top: -10rem;
 
-    .ea_o_item {}
+    .ea_o_item {
+
+      empty-cells: show;
+      border-right: 1rem solid #dcdcdc;
+      border-bottom: 1rem solid #dcdcdc;
+      border-left: 1rem solid #dcdcdc;
+
+      &:nth-child(2n) {
+        border-right: 0;
+      }
+    }
+
+    .ea_o_title {
+      display: block;
+      font-size: 18rem;
+      font-weight: 700;
+      line-height: 60rem;
+      border-bottom: 1rem solid #dcdcdc;
+    }
+
+    .ea_o_ul {
+    }
 
     .ea_o_key {
       display: block;
