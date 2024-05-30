@@ -1,0 +1,45 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .banner_east {
+    position: relative;
+    color: #fff;
+  }
+
+  .he_logo {
+    width: 100%;
+    height: 600rem;
+  }
+
+  .be_content {
+    .e_width();
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20rem 180rem;
+
+    .be_h2 {
+      font-size: 46rem;
+      margin-top: 16rem;
+    }
+
+    .be_h1 {
+      font-size: 66rem;
+      font-weight: 800;
+      text-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .be_right {
+    .be_right_btn {
+      .e_arrow_btn();
+    }
+
+    .be_left_btn {
+      .e_arrow_btn(#fff, #c5270a);
+      transform: rotate(180deg);
+      margin-top: 40rem;
+    }
+  }
+}

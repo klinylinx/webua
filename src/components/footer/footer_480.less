@@ -1,0 +1,44 @@
+@media screen and (max-width:767.5px) {
+  .footer_east {
+    position: relative;
+    background: url("@/assets/images/net05.png") center;
+    color: #fff;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .footer_east_inner {
+      position: relative;
+      z-index: 2;
+      padding: 40rem 20rem 0;
+    }
+  }
+
+  .fe_logo {
+    height: 32rem;
+  }
+
+  .fe_ul {
+    justify-content: space-between;
+    margin-top: 30rem;
+    .fe_li {
+      font-size: 14rem;
+    }
+  }
+
+  .fe_bottom {
+    text-align: center;
+    padding: 24rem 0;
+    border-top: 1rem solid #fff;
+    margin-top: 50rem;
+    font-size: 12rem;
+  }
+}

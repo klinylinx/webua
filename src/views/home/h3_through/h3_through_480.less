@@ -1,0 +1,93 @@
+@import url("@/style/var.less");
+
+@media screen and (max-width:767.5px) {
+  .eh_through {
+    position: relative;
+    background: url("@/assets/images/net02.png") center no-repeat;
+    color: #fff;
+
+    .eh_through_inner {
+      align-items: flex-start;
+    }
+  }
+
+  .eh_t_left {
+    padding: 50rem 20rem;
+    .eh_t_h2 {
+      font-size: 18rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .eh_t_h3 {
+      font-size: 20rem;
+      padding: 12rem 0 0;
+    }
+
+    .eh_t_line {
+      height: 3rem;
+    }
+
+    .eh_t_block {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30rem;
+      color: rgba(255, 255, 255, 0.7);
+
+      .eh_t_link {
+        display: block;
+        padding-bottom: 30rem;
+
+        &.on {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .eh_t_add_btn {
+      .e_add_min_btn(#fff, #c5270a);
+    }
+  }
+
+  .eh_t_right {
+    position: absolute;
+    top: 60rem;
+    right: 20rem;
+
+    .eh_t_right_btn {
+      .e_arrow_min_btn();
+    }
+
+    .eh_t_left_btn {
+      .e_arrow_min_btn(#fff, #c5270a);
+      transform: rotate(180deg);
+      margin-top: 20rem;
+    }
+  }
+
+  .eh_t_bottom {
+    position: relative;
+    margin-left: 50rem;
+    background: rgba(197, 39, 10, 1);
+    border-radius: 20rem 0 0 0;
+    padding: 44rem 20rem 60rem;
+
+    .eh_t_text {
+      font-size: 14rem;
+      line-height: 34rem;
+      -webkit-line-clamp: 5;
+      max-height: 170rem;
+    }
+
+    .eh_t_btn {
+      width: 142rem;
+      height: 42rem;
+      line-height: 42rem;
+      text-align: center;
+      background-color: #fff;
+      color: #000;
+      font-size: 16rem;
+      margin-top: 30rem;
+    }
+  }
+}

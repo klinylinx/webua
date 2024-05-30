@@ -1,0 +1,59 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .en_list_outer {
+    .e_width();
+  }
+
+  .en_net07 {
+    margin-right: 60rem;
+    flex-shrink: 0;
+    width: 620rem;
+    height: 430rem;
+  }
+
+  .en_l_top {
+    display: flex;
+    padding-top: 120rem;
+    padding-bottom: 60rem;
+    border-bottom: 1rem solid #d9d9d9;
+
+    .en_l_ul {
+      .en_l_li {
+        &+.en_l_li {
+          margin-top: 40rem;
+        }
+      }
+    }
+  }
+
+  .en_l_dt {
+    .en_l_dd {
+      padding: 40rem 0;
+      border-bottom: 1rem solid #d9d9d9;
+    }
+
+    .en_l_img {
+      flex-shrink: 0;
+      width: 280rem;
+      height: 160rem;
+    }
+  }
+
+  .en_l_h3 {
+    font-size: 20rem;
+  }
+
+  .en_l_h5 {
+    font-size: 18rem;
+    line-height: 1.4;
+    max-height: 50rem;
+    color: #333;
+  }
+
+  .en_l_h6 {
+    font-size: 14rem;
+    color: #666;
+    padding: 10rem 0;
+  }
+}

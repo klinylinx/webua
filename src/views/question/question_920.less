@@ -1,0 +1,37 @@
+@import url("@/style/var.less");
+@media screen and (min-width:768px) {
+  .east_question {
+    .e_width();
+
+    .eq_li {
+      position: relative;
+      background: rgba(248, 248, 248, 1);
+      padding: 44rem 100rem 44rem 60rem;
+      line-height: 36rem;
+      margin-bottom: 40rem;
+    }
+
+    .eq_q {
+      font-size: 24rem;
+    }
+
+    .eq_a {
+      font-size: 20rem;
+      margin-top: 10rem;
+      color: #999;
+    }
+
+    .eq_btn {
+      .e_arrow_min_btn(#fff, #c5270a);
+      position: absolute;
+      top: 44rem;
+      right: 40rem;
+
+      &.on {
+        .e_arrow_min_btn(#c5270a, #fff);
+        position: absolute;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

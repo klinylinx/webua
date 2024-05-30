@@ -1,0 +1,68 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .eh_sub {}
+
+  .eh_sub_inner {
+    .e_width();
+    padding-top: 200rem;
+    padding-bottom: 200rem;
+  }
+
+  .eh_s_top {
+    .eh_s_h2 {
+      font-size: 38rem;
+      font-weight: 100;
+      color: #666;
+    }
+
+    .eh_s_h3 {
+      font-size: 40rem;
+      padding: 20rem 0 16rem;
+    }
+
+    .eh_s_line {
+      height: 6rem
+    }
+  }
+
+  .eh_s_right_btn {
+    .e_arrow_btn();
+  }
+
+  .eh_s_ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100rem;
+
+    .eh_s_li {
+      width: calc((100% - 50rem) / 2);
+      background: rgba(255, 255, 255, 1);
+      text-align: center;
+
+      &:nth-of-type(2n) {
+        margin-left: 50rem;
+      }
+
+      &:nth-of-type(n + 3) {
+        margin-top: 50rem;
+      }
+
+      .eh_s_imh {
+        width: 100%;
+        height: 310rem;
+      }
+
+      .eh_s_h4 {
+        padding: 20rem 0;
+        font-size: 20rem;
+      }
+
+      .eh_s_h5 {
+        color: #666;
+        padding: 0 60rem;
+      }
+    }
+  }
+}

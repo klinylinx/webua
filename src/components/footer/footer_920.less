@@ -1,0 +1,52 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .footer_east {
+    position: relative;
+    background: url("@/assets/images/net05.png") center;
+    color: #fff;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .footer_east_inner {
+      .e_width();
+      position: relative;
+      z-index: 2;
+      padding: 50rem 0 0;
+    }
+  }
+
+  .fe_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fe_logo {
+    height: 48rem;
+  }
+
+  .fe_ul {
+    .fe_li {
+      &+.fe_li {
+        margin-left: 50rem;
+      }
+    }
+  }
+
+  .fe_bottom {
+    text-align: center;
+    padding: 30rem 0;
+    border-top: 1rem solid #fff;
+    margin-top: 200rem;
+  }
+}

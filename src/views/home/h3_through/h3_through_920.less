@@ -1,0 +1,98 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .eh_through {
+    position: relative;
+    background: url("@/assets/images/net02.png") center no-repeat;
+    height: 1080rem;
+    color: #fff;
+
+    .eh_through_inner {
+      .e_width();
+      padding-top: 200rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .eh_t_left {
+    .eh_t_h2 {
+      font-size: 38rem;
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .eh_t_h3 {
+      font-size: 40rem;
+      padding: 20rem 0 16rem;
+    }
+
+    .eh_t_line {
+      height: 6rem;
+    }
+
+    .eh_t_block {
+      margin-top: 60rem;
+      margin-bottom: 20rem;
+      color: rgba(255, 255, 255, 0.7);
+
+      .eh_t_link {
+        display: block;
+        padding-bottom: 30rem;
+
+        &.on {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .eh_t_add_btn {
+      .e_add_btn(64rem, #fff, #c5270a);
+    }
+  }
+
+  .eh_t_right {
+    padding-top: 80rem;
+
+    .eh_t_right_btn {
+      .e_arrow_btn();
+    }
+
+    .eh_t_left_btn {
+      .e_arrow_btn(#fff, #c5270a);
+      transform: rotate(180deg);
+      margin-top: 40rem;
+    }
+  }
+
+  .eh_t_bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: calc((100% - @e_min_width) / 2 + 600rem);
+    padding: 100rem 140rem 100rem 100rem;
+    background: rgba(197, 39, 10, 1);
+    border-radius: 50rem 0 0 0;
+
+    .eh_t_text {
+      font-size: 24rem;
+      line-height: 42rem;
+      -webkit-line-clamp: 3;
+      height: 120rem;
+      max-height: 120rem;
+    }
+
+    .eh_t_btn {
+      width: 211rem;
+      height: 54rem;
+      line-height: 54rem;
+      text-align: center;
+      background-color: #fff;
+      color: #000;
+      font-size: 24rem;
+      margin-top: 80rem;
+    }
+  }
+}

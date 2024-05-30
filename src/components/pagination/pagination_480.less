@@ -1,0 +1,60 @@
+@media screen and (max-width:767.5px) {
+  @size: 24rem;
+
+  .east_pagination {
+    padding: 40rem 0;
+
+    .ep_icon {
+      cursor: pointer;
+      width: @size;
+      height: @size;
+      border: 1rem solid #ececec;
+      color: #333;
+
+      &:hover {
+        color: #c5270a;
+      }
+
+      &[disabled="true"] {
+        color: #999;
+        background-color: var(--el-disabled-bg-color);
+      }
+    }
+
+    .ep_icon_inner {
+      width: 12rem;
+    }
+  }
+
+  :deep(.el-pagination.is-background) {
+    margin: 0 8rem;
+
+    button,
+    .el-pager li {
+      width: @size;
+      height: @size;
+      background-color: #fff;
+      border: 1rem solid #ececec;
+      font-size: 14rem;
+      min-width: auto;
+
+      .el-icon {
+        font-size: 12rem;
+      }
+
+      &:not([disabled]):hover {
+        color: #c5270a;
+      }
+
+      &.is-active {
+        color: #fff;
+        background-color: #c5270a;
+        border-color: #c5270a;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

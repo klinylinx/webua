@@ -1,0 +1,107 @@
+@import url("@/style/var.less");
+
+@media screen and (max-width:767.5px) {
+  .eh_banner {
+    position: relative;
+    color: #fff;
+    height: 220rem;
+  }
+
+  .eh_image {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .eh_banner_image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .eh_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20rem 20rem 60rem;
+    z-index: 10;
+    pointer-events: none;
+    user-select: none;
+
+    .eh_h2 {
+      display: none;
+    }
+
+    .eh_h1 {
+      font-size: 40rem;
+      font-weight: 800;
+      margin-top: 10rem;
+    }
+
+    .eh_h3 {
+      font-family: Alibaba PuHuiTi 3;
+      font-size: 16rem;
+      line-height: 2;
+      margin-top: 20rem;
+    }
+
+    .eh_btn {
+      width: 168rem;
+      height: 54rem;
+      line-height: 54rem;
+      text-align: center;
+      background-color: #fff;
+      color: #000;
+      font-size: 20rem;
+      margin-top: 30rem;
+    }
+
+    .eh_progress {
+      .e_line(rgba(217, 217, 217, 1));
+      margin-top:50rem;
+      font-size: 14rem;
+
+      .eh_p_num {
+        .e_line(transparent, -2rem, 5);
+        flex-grow: 1;
+        padding-bottom: 10rem;
+
+        &.on::after {
+          background: rgba(197, 39, 10, 1);
+        }
+      }
+    }
+  }
+
+  .eh_c_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48rem;
+    line-height: 48rem;
+    padding: 0 16rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+
+    .eh_c_bottom_inner {
+      font-size: 14rem;
+
+      .eh_c_audio,
+      .eh_c_menu {
+        width: 16rem;
+        flex-shrink: 0;
+      }
+
+      .eh_c_audio {
+        margin-right: 10rem;
+      }
+      .eh_c_menu{
+        margin-left: 10rem;
+      }
+
+      .ch_c_notice {
+        width: calc(100% - 60rem);
+      }
+    }
+  }
+}

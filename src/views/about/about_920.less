@@ -1,0 +1,46 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .ea_o_outer {
+    .e_width();
+    display: flex;
+    align-items: flex-start;
+    padding: 100rem 0;
+  }
+
+  .ea_o_left {
+    width: 200rem;
+    flex-shrink: 0;
+    margin-top: -10rem;
+
+    .ea_o_item {}
+
+    .ea_o_key {
+      display: block;
+      font-size: 18rem;
+      font-weight: 700;
+      line-height: 60rem;
+      border-bottom: 1rem solid #dcdcdc;
+    }
+
+    .ea_o_ul {}
+
+    .ea_o_li {
+      display: block;
+      font-size: 14rem;
+      padding: 0 25rem;
+      line-height: 40rem;
+      border-bottom: 1rem dashed #dcdcdc;
+
+      &.on {
+        background: #f3c074;
+      }
+    }
+  }
+
+  .ea_o_right {
+    flex-grow: 1;
+    margin-left: 60rem;
+    line-height: 1.8;
+  }
+}

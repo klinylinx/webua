@@ -1,0 +1,43 @@
+@import url("@/style/var.less");
+
+@media screen and (max-width:767.5px) {
+  .east_question {
+    padding: 0 20rem;
+
+    .eq_li {
+      position: relative;
+      background: #f8f8f8;
+      padding: 16rem 32rem 16rem 16rem;
+      line-height: 18rem;
+
+      &+.eq_li {
+        margin-top: 20rem;
+      }
+    }
+
+    .eq_q {
+      font-size: 12rem;
+    }
+
+    .eq_a {
+      font-size: 12rem;
+      margin-top: 10rem;
+      color: #999;
+    }
+
+    .eq_btn {
+      .e_arrow_min_btn(#fff, #c5270a);
+      position: absolute;
+      top: 10rem;
+      right: 10rem;
+      transform: scale(.6);
+      transition: transform .3s;
+
+      &.on {
+        .e_arrow_min_btn(#c5270a, #fff);
+        position: absolute;
+        transform: scale(.6) rotate(90deg);
+      }
+    }
+  }
+}

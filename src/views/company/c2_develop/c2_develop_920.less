@@ -1,0 +1,127 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .eh_idea {
+    position: relative;
+    background: url("@/assets/images/net04.png") center no-repeat;
+    height: 900rem;
+    padding-top: 100rem;
+  }
+
+  .eh_idea_inner {
+    .e_width();
+    align-items: flex-start;
+  }
+
+  .eh_i_left {
+    .eh_i_h2 {
+      font-size: 38rem;
+      font-weight: 100;
+      width: 220rem;
+      color: #666;
+    }
+
+    .eh_i_h3 {
+      font-size: 40rem;
+      padding: 20rem 0 16rem;
+    }
+
+    .eh_i_line {
+      height: 6rem;
+    }
+  }
+
+  .eh_i_bottom {
+    position: absolute;
+    bottom: 100rem;
+    left: 0;
+    right: 0;
+
+    .eh_i_ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .e_width();
+      padding-left: 80rem;
+
+      .eh_i_li {
+        position: relative;
+        cursor: pointer;
+        flex-grow: 1;
+        border-top: 1rem solid #d9d9d9;
+
+        &:last-child {
+          border: 0;
+        }
+
+        &:nth-of-type(n + 5) {
+          .eh_i_content {
+            right: 100rem;
+            left: auto;
+
+            &:after {
+              right: 110rem;
+              left: auto;
+            }
+          }
+        }
+
+        &:hover {
+          color: #c5270a;
+        }
+      }
+
+      .eh_i_point {
+        position: relative;
+        background: rgba(197, 39, 10, 0.2);
+        width: 20rem;
+        height: 20rem;
+        border-radius: 20rem;
+        margin-top: -10rem;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 12rem;
+          height: 12rem;
+          border-radius: 12rem;
+          top: 4rem;
+          left: 4rem;
+          background: #c5270a;
+          z-index: 1;
+        }
+      }
+
+      .eh_i_h4 {
+        font-size: 24rem;
+        font-weight: 600;
+        margin-top: 30rem;
+      }
+
+      .eh_i_content {
+        position: absolute;
+        bottom: 120rem;
+        left: -40rem;
+        font-size: 18rem;
+        line-height: 32rem;
+        background: #c5270a;
+        color: #fff;
+        padding: 30rem;
+        z-index: 5;
+        width: 400rem;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -18rem;
+          left: 40rem;
+          border: 10rem solid;
+          width: 0;
+          height: 0;
+          border-color: #c5270a transparent transparent transparent;
+        }
+      }
+    }
+  }
+}

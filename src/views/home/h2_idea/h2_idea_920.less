@@ -1,0 +1,98 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .eh_idea {
+    background: url("@/assets/images/net04.png") center no-repeat;
+    height: 980rem;
+  }
+
+  .eh_idea_inner {
+    .e_width();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .eh_i_left {
+    .eh_i_h2 {
+      font-size: 38rem;
+      font-weight: 100;
+      width: 220rem;
+      color: #666;
+    }
+
+    .eh_i_h3 {
+      font-size: 40rem;
+      padding: 20rem 0 16rem;
+    }
+
+    .eh_i_line {
+      height: 6rem;
+    }
+
+    .eh_i_block {
+      margin-top: 60rem;
+      margin-bottom: 20rem;
+
+      .eh_i_link {
+        display: block;
+        padding-bottom: 30rem;
+        color: #666;
+        &.on {
+          color: #c5270a;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .eh_i_add_btn {
+      .e_add_btn();
+    }
+  }
+
+  .eh_i_right {
+    flex-wrap: wrap;
+    margin: -60rem 0 0 -60rem;
+
+    .eh_i_li {
+      width: 540rem;
+      height: 240rem;
+      background: rgba(255, 255, 255, 1);
+      margin: 60rem 0 0 60rem;
+      padding: 60rem 40rem 0 40rem;
+
+      .eh_i_title {
+        margin-bottom: 10rem;
+      }
+
+      .eh_i_num {
+        font-size: 40rem;
+        font-weight: 800;
+        width: 50rem;
+        margin-right: 30rem;
+        flex-shrink: 0;
+      }
+
+      .eh_i_h4 {
+        font-size: 24rem;
+      }
+
+      .eh_i_h5 {
+        line-height: 32rem;
+        max-height: 64rem;
+        color: #666;
+      }
+
+      .eh_i_h6 {
+        .e_line();
+        font-size: 10rem;
+        width: 50rem;
+        margin-right: 30rem;
+        flex-shrink: 0;
+        color: #666;
+        padding-bottom: 20rem;
+        margin-top: -8rem;
+      }
+    }
+  }
+}

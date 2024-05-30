@@ -1,0 +1,56 @@
+@import url("@/style/var.less");
+
+@media screen and (min-width:768px) {
+  .ev_j_dt {
+    .e_width();
+    min-height: 1000rem;
+  }
+
+  .ev_j_dt_inner {
+    display: flex;
+    margin: 0 0 0 -40rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .ev_j_dd {
+      margin: 60rem 0 0 40rem;
+      width: calc((100% - 40rem * 3) / 3);
+      padding: 20rem;
+      background: #f8f8f8;
+      cursor: pointer;
+      text-align: center;
+
+      .ev_l_image {
+        position: relative;
+        width: 100%;
+        height: 280rem;
+
+        .ev_l_btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 64rem;
+          height: 64rem;
+          margin: -32rem 0 0 -32rem;
+        }
+      }
+
+      .ev_l_title {
+        font-size: 20rem;
+        padding: 24rem 0 14rem;
+      }
+
+      .ev_l_date {
+        font-size: 14rem;
+        color: #999;
+        margin-bottom: 20rem;
+      }
+
+      .ev_l_content {
+        font-size: 16rem;
+        line-height: 1.6;
+        color: #666;
+      }
+    }
+  }
+}

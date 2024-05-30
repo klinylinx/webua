@@ -1,0 +1,73 @@
+@import url("@/style/var.less");
+
+@media screen and (max-width:767.5px) {
+  .en_list_outer {}
+
+  .en_net07 {
+    height: 232rem;
+    width: 100%;
+    margin-bottom: 30rem;
+  }
+
+  .en_l_h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16rem;
+  }
+
+  .en_l_h5 {
+    font-size: 14rem;
+    line-height: 20rem;
+    color: #333;
+  }
+
+  .en_l_h6 {
+    font-size: 14rem;
+    color: #666;
+    padding: 10rem 0;
+  }
+
+  .en_l_top {
+    padding: 30rem 20rem 60rem;
+
+    .en_l_ul {
+      .en_l_li {
+        &+.en_l_li {
+          margin-top: 40rem;
+        }
+      }
+    }
+
+    .en_l_h5 {
+      -webkit-line-clamp: 4;
+      max-height: 80rem;
+    }
+  }
+
+  .en_l_dt {
+    border-top: 1rem solid rgba(217, 217, 217, 1);
+    padding: 20rem;
+
+    .en_l_dd {
+      padding: 14rem 0;
+    }
+
+    .en_l_img {
+      flex-shrink: 0;
+      width: 140rem;
+      height: 100rem;
+    }
+
+    .en_l_cxt {
+      width: calc(100% - 170rem);
+    }
+
+    .en_l_h5 {
+      -webkit-line-clamp: 2;
+      max-height: 40rem;
+    }
+  }
+
+
+}

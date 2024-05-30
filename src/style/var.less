@@ -1,0 +1,103 @@
+@e_min_width: var(--bodyWidth);
+
+.e_width(@w: @e_min_width) {
+  margin: 0 auto;
+  width: @w;
+}
+
+.e_line(@bgc: #999, @bottom: 0, @zIndex: 0) {
+  position: relative;
+  padding-bottom: 2rem;
+
+  &:after {
+    position: absolute;
+    bottom: @bottom;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    height: 2rem;
+    background: @bgc;
+    z-index: @zIndex;
+  }
+}
+
+.e_add_btn(@size: 64rem, @bg: #c5270a, @color: #fff) {
+  position: relative;
+  width: @size;
+  height: @size;
+  border-radius: @size;
+  background: @bg;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: @color;
+  }
+
+  &::before {
+    width: 16rem;
+    height: 2rem;
+  }
+
+  &::after {
+    width: 2rem;
+    height: 16rem;
+  }
+}
+
+.e_add_min_btn(@bg: #c5270a, @color: #fff) {
+  .e_add_btn(32rem, @bg, @color);
+
+  &::before {
+    width: 8rem;
+    height: 1rem;
+  }
+
+  &::after {
+    width: 1rem;
+    height: 8rem;
+  }
+}
+
+.e_arrow_btn(@bg: #c5270a, @color: #fff) {
+  position: relative;
+  width: 64rem;
+  height: 64rem;
+  border-radius: 64rem;
+  background: @bg;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25rem;
+    left: 22rem;
+    transform: rotate(-45deg);
+    border: 2rem solid @color;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+  }
+}
+
+.e_arrow_min_btn(@bg: #c5270a, @color: #fff) {
+  .e_arrow_btn(@bg, @color);
+  width: 32rem;
+  height: 32rem;
+  border-radius: 32rem;
+
+  &:after {
+    width: 5rem;
+    height: 5rem;
+    top: 11rem;
+    left: 10rem;
+  }
+}

@@ -1,0 +1,120 @@
+@media screen and (max-width:767.5px) {
+  .eh_idea {
+    position: relative;
+    background: url("@/assets/images/net04.png") center no-repeat;
+    height: 700rem;
+    padding-top: 0;
+  }
+
+  .eh_idea_inner {
+    .e_width();
+    align-items: flex-start;
+  }
+
+  .eh_i_left {
+    padding: 50rem 0 0 20rem;
+    .eh_i_h2 {
+      font-size: 18rem;
+      font-weight: 100;
+      color: #666;
+    }
+
+    .eh_i_h3 {
+      font-size: 20rem;
+      padding: 10rem 0 2rem;
+    }
+
+    .eh_i_line {
+      height: 3rem;
+    }
+  }
+
+  .eh_i_bottom {
+    position: absolute;
+    bottom: 40rem;
+    left: 0;
+
+    .eh_i_ul {
+      padding-left: 30rem;
+      .eh_i_li {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        border-left: 1rem solid #d9d9d9;
+        padding-bottom: 40rem;
+
+        &:last-child {
+          border: 0;
+        }
+
+        &:nth-of-type(n + 5) {
+          .eh_i_content {
+            bottom: 20rem;
+            top: auto;
+
+            &:after {
+              bottom: 22rem;
+              top: auto;
+            }
+          }
+        }
+
+        &:hover {
+          color: #c5270a;
+        }
+      }
+
+      .eh_i_point {
+        position: relative;
+        background: rgba(197, 39, 10, 0.2);
+        width: 20rem;
+        height: 20rem;
+        border-radius: 20rem;
+        margin-left: -10rem;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 12rem;
+          height: 12rem;
+          border-radius: 12rem;
+          top: 4rem;
+          left: 4rem;
+          background: #c5270a;
+          z-index: 1;
+        }
+      }
+
+      .eh_i_h4 {
+        font-size: 16rem;
+        font-weight: 600;
+        margin-left: 24rem;
+      }
+
+      .eh_i_content {
+        position: absolute;
+        top: -10rem;
+        left: 96rem;
+        font-size: 14rem;
+        line-height: 1.8;
+        background: #c5270a;
+        color: #fff;
+        padding: 20rem;
+        z-index: 5;
+        width: 220rem;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 10rem;
+          left: -18rem;
+          border: 10rem solid;
+          width: 0;
+          height: 0;
+          border-color: transparent #c5270a  transparent transparent;
+        }
+      }
+    }
+  }
+}
